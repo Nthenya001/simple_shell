@@ -21,27 +21,27 @@ extern char **environ;
 int prompt(void);
 char *_read(void);
 char *_fullpathbuffer(char **av, char *PATH, char *copy);
-int checkbuiltins(char **av, char *buffer, int exitstatus);
+int checkbuiltins(char **av, char *PATH, char *copy);
 int _forkprocess(char **av, char *buffer, char *fullpathbuffer);
 
 /* String Helper Functions */
 
 char *_strdup(char *str);
 int _splitstring(char *str);
-int _strcmp(const char *s1, const charchar *s2);
+int _strcmp(const char *s1, const char *s2);
 char *_strcat(char *dest, char *src);
 int _strlen(char *s);
 
-/* Tokenize & PATH Helper Functions */
+/*Tokenize & PATH Helper Functions*/
 
-char **tokensize(char *buffer);
+char **tokenize(char *buffer);
 int _splitPATH(char *str);
-int _PATHstrcmp(const char *s1, const char*s2);
+int _PATHstrcmp(const char *s1, const char *s2);
 char *_concat(char *tmp, char **av, char *tok);
 
-/*Other Helper FUncs*/
+/*Other Helper Func*/
 
-char *_getenv(const char *name);
+char *_getenv(const(const char *name);
 int _env(void);
 void _puts(char *str);
 int _putchar(char c);
