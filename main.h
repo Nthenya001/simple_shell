@@ -1,4 +1,4 @@
-#ifndef MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
 
 #include <stdio.h>
@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/types.h>
 #include <sys/wait.h>
 #include <fcntl.h>
 #include <string.h>
@@ -13,14 +14,14 @@
 
 extern char **environ;
 
-/* PATH Shell FUnctions */
+/* PATH Shell Functions */
 
 /* Program Flow */
 
 int prompt(void);
-char *_raed(void);
+char *_read(void);
 char *_fullpathbuffer(char **av, char *PATH, char *copy);
-int checkbuiltins(char **av *buffer, int extstatus);
+int checkbuiltins(char **av, char *buffer, int exitstatus);
 int _forkprocess(char **av, char *buffer, char *fullpathbuffer);
 
 /* String Helper Functions */
@@ -33,13 +34,14 @@ int _strlen(char *s);
 
 /* Tokenize & PATH Helper Functions */
 
-char **tokenize(char *buffer);
+char **tokensize(char *buffer);
 int _splitPATH(char *str);
-int _PATHstcmp(const char *s1, const char *s2);
+int _PATHstrcmp(const char *s1, const *s2);
 char *_concat(char *tmp, char **av, char *tok);
 
-/* Other Helper Funcs */
-cahr *_getenv(const char *name);
+/*Other Helper FUncs*/
+
+char *_getenv(const char *name);
 int _env(void);
 void _puts(char *str);
 int _putchar(char c);
