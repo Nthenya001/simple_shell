@@ -5,7 +5,7 @@
  *
  * Return: pointer to duplicated string
  */
- char *_strdup(char *str)
+char *_strdup(char *str)
 {
 int i;
 char *dest_str;
