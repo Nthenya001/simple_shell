@@ -4,7 +4,7 @@
  *
  * Return: 0 on sucess
  */
- int prompt(void)
+int prompt(void)
 {
 char *prompt = "$ ";
 ssize_t writecount = 0;
