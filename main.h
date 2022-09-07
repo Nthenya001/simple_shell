@@ -28,7 +28,7 @@ int _forkprocess(char **av, char *buffer, char *fullpathbuffer);
 
 char *_strdup(char *str);
 int _splitstring(char *str);
-int _strcmp(const char *s1, const char *s2);
+int _strcmp(const char *s1, const charchar *s2);
 char *_strcat(char *dest, char *src);
 int _strlen(char *s);
 
@@ -36,7 +36,7 @@ int _strlen(char *s);
 
 char **tokensize(char *buffer);
 int _splitPATH(char *str);
-int _PATHstrcmp(const char *s1, const *s2);
+int _PATHstrcmp(const char *s1, const char*s2);
 char *_concat(char *tmp, char **av, char *tok);
 
 /*Other Helper FUncs*/
