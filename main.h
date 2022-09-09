@@ -46,5 +46,4 @@ int _env(void);
 void _puts(char *str);
 int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
-
-#endif /* MAIN_H/
+#endif /* MAIN_H */
